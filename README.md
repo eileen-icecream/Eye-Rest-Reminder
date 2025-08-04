@@ -7,8 +7,8 @@ It displays a fullscreen pop-up with an image and message every 20 minutes.
 - Works on Windows and macOS
 - Full screen pop-up without sound
 - Supports `.exe` packaging via PyInstaller
-- 
 
+  
 ## Files
 - `alarm.py` - Python source code
 - `EyeRestReminder.exe` - Executable for Windows
