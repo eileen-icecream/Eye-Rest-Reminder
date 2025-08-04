@@ -9,7 +9,6 @@ img = None
 def resource_path(relative_path):
     """Get the absolute path to a resource, works for PyInstaller."""
     try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
         base_path = sys._MEIPASS
     except AttributeError:
         base_path = Path(__file__).parent
@@ -22,7 +21,7 @@ def show_reminder(root):
     """
     global img
     reminder_window = tk.Toplevel(root)
-    reminder_window.title("眼睛休息的時間到了 ~ ~ ~")
+    reminder_window.title("It's time to reat your eyes ~ ~ ~")
     reminder_window.geometry("1600x1600")
 
     image_path = resource_path("Eta6.png")
@@ -32,7 +31,7 @@ def show_reminder(root):
     label.pack(padx=10, pady=10)
 
     text_label = tk.Label(
-        reminder_window, text="休息一下！眼睛放鬆 1 分鐘 ~", font=("Arial", 16)
+        reminder_window, text="Let's relax! Rest your eyes for 1 minute ~", font=("Arial", 16)
     )
     text_label.pack(padx=10, pady=10)
 
