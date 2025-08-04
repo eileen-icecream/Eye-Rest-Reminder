@@ -62,14 +62,11 @@ if __name__ == "__main__":
     interval_minutes = 1
     interval_seconds = interval_minutes * 60
 
-    # Create the main root window
     root = tk.Tk()
     root.withdraw()
 
-    # Bind Ctrl+Q to stop the program
     root.bind("<Control-q>", stop_program)
 
-    # Schedule the first reminder after the specified interval
     root.after(int(interval_seconds * 1000), schedule_reminder, root, interval_seconds)
 
     print("Reminder program is running. Press Ctrl+Q to stop.")
