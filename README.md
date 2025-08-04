@@ -17,3 +17,7 @@ It displays a fullscreen pop-up with an image and message every 20 minutes.
 ### Run from Python
 ```bash
 python alarm.py
+
+### Download and Double click EyeRestReminder.exe
+```bash
+EyeRestReminder.exe
